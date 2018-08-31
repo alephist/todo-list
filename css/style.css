@@ -1,0 +1,83 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(to right, #1282a2, white);
+}
+
+.todo {
+  width: 360px;
+  margin: 100px auto;
+}
+
+.todo__header {
+  background-color: #1282a2;
+  text-align: center;
+}
+
+.todo__title {
+  color: white;
+  margin: 0;
+  padding: 8px;
+}
+
+.todo__form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.todo__input {
+  flex-grow: 1;
+  border: none;
+  padding: 13px;
+  font-size: 16px;
+  outline: none;
+}
+
+.todo__add-btn {
+  cursor: pointer;
+  padding: 8px 13px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+}
+
+.todo__task-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: #f7f7ef;
+}
+
+.todo__task {
+  padding: 12px;
+  cursor: pointer;
+  position: relative;
+}
+
+.todo__task--complete {
+  color: gray;
+  text-decoration: line-through;
+}
+
+.todo__task:nth-of-type(2n) {
+  background-color: #ccc7c7;
+}
+
+.todo__del-btn {
+  padding: 12px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.todo__del-btn:hover {
+  cursor: pointer;
+  background-color: #df2935;
+  color: white;
+  transition: 400ms;
+}
+
+/*# sourceMappingURL=style.css.map */

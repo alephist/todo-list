@@ -1,0 +1,81 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-image: linear-gradient(to right, #1282a2, white);
+}
+
+.todo {
+	width: 360px;
+	margin: 100px auto;
+
+	&__header {
+		background-color: #1282a2;
+		text-align: center;
+	}
+
+	&__title {
+		color: white;
+		margin: 0;
+		padding: 8px;
+	}
+
+	&__form {
+		display: flex;
+		justify-content: space-between;
+	}
+
+	&__input {
+		flex-grow: 1;
+		border: none;
+		padding: 13px;
+		font-size: 16px;
+		outline: none;
+	}
+
+	&__add-btn {
+		cursor: pointer;
+		padding: 8px 13px;
+		font-size: 16px;
+		border: none;
+		outline: none;
+	}
+
+	&__task-list {
+		margin: 0;
+		padding: 0;
+		list-style: none;
+		background-color: #f7f7ef;
+	}
+
+	&__task {
+		padding: 12px;
+		cursor: pointer;
+		position: relative;
+
+		&--complete {
+			color: gray;
+			text-decoration: line-through;
+		}
+
+		&:nth-of-type(2n) {
+			background-color: #ccc7c7;
+		}
+	}
+
+	&__del-btn {
+		padding: 12px;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		&:hover {
+			cursor: pointer;
+			background-color: #df2935;
+			color: white;
+			transition: 400ms;
+		}
+	}
+}
